@@ -6,7 +6,7 @@ If you are wondering what is [.NET Core](https://www.microsoft.com/net/core/plat
 
 If you want to jump in and look at the [C# code](https://github.com/f-minzoni/dotnet-hellodocker/blob/master/dotnetapp/Program.cs) in the dotnetapp folder. It's a console app, that tries to connect to a PostgreSQL database, init a table, just to persist a greeting, basically, the simple text "Hello Docker" : )
 
-The complete definition of the applcation components, can be found in "Docker style" in the [docker-compose.yml](https://github.com/f-minzoni/dotnet-hellodocker/blob/master/docker-compose.yml) file:
+The complete definition of the application components, can be found in "Docker style" in the [docker-compose.yml](https://github.com/f-minzoni/dotnet-hellodocker/blob/master/docker-compose.yml) file:
 ```
 version: '2'
 
@@ -17,6 +17,20 @@ services:
       - db
   db:
     image: postgres
+```
+* our .NET sample app
+* ... a PostgreSQL database, based on the latest official [Docker Image](https://hub.docker.com/_/postgres/)
+
+To run the application, you need to:
+
+1. open a terminal, configured with the right DOCKER_HOST env
+
+2. change the working dir to the root of this repo
+
+3. ...execute the following command:
+
+```
+docker-compose up -d
 ```
 
 
