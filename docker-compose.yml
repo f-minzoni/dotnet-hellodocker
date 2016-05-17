@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  app:
+    build: dotnetapp/
+    links:
+      - db
+  db:
+    image: postgres
