@@ -42,6 +42,24 @@ Creating dotnethellodocker_db_1
 Creating dotnethellodocker_app_1
 ```
 
+Finally, you can check the console app has been executed correctly, with the following command:
 
+```
+docker-compose logs app
+Attaching to dotnethellodocker_app_1
+app_1  | Project dotnetapp (.NETCoreApp,Version=v1.0) will be compiled because expected outputs are missing
+app_1  | Compiling dotnetapp for .NETCoreApp,Version=v1.0
+app_1  | 
+app_1  | Compilation succeeded.
+app_1  |     0 Warning(s)
+app_1  |     0 Error(s)
+app_1  | 
+app_1  | Time elapsed 00:00:05.9834689
+app_1  |  
+app_1  | 
+app_1  | Hello Docker
 
+```
+
+Hello Docker : )
 
