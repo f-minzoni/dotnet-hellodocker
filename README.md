@@ -32,7 +32,7 @@ To run the application, you need to:
 ```
 docker-compose up -d
 ```
-If you don't have the Postgres and [microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet/) Docker images, the client will first pull those base images and then builds the dotnetapp, getting all the .NET dependencies.
+If you don't have the Postgres and [microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet/) Docker images, the client will first pull those base images and then builds the dotnetapp, as described in the [Dockerfile](https://github.com/f-minzoni/dotnet-hellodocker/blob/master/dotnetapp/Dockerfile).
 If everything went well, Docker Compose, first try to run the database and then the dependent console app:
 ```
 ...
