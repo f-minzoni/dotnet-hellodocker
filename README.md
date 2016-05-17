@@ -42,7 +42,7 @@ Creating dotnethellodocker_db_1
 Creating dotnethellodocker_app_1
 ```
 
-Finally, you can check the console app has been executed correctly, with the following command:
+Finally, you can check if the console app has been executed correctly, with the following command:
 
 ```
 docker-compose logs app
