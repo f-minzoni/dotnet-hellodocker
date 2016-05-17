@@ -32,5 +32,16 @@ To run the application, you need to:
 ```
 docker-compose up -d
 ```
+If you don't have the Postgres and [microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet/) Docker images, the client will first pull those base images and then builds the dotnetapp, getting all the .NET dependencies.
+If everything went well, Docker Compose, first try to run the database and then the dependent console app:
+```
+...
+Successfully built 345ed606caa8
+WARNING: Image for service app was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
+Creating dotnethellodocker_db_1
+Creating dotnethellodocker_app_1
+```
+
+
 
 
