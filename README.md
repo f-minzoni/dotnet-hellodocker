@@ -6,4 +6,17 @@ If you are wondering what is [.NET Core](https://www.microsoft.com/net/core/plat
 
 If you want to jump in and look at the .NET code, open the dotnetapp folder. It's a C# console app, that tries to connect to a PostgreSQL database, init a table, just to persist a greeting, basically, the simple text "Hello Docker" : )
 
+The complete definition of the applcation components, can be found in "Docker style" in the [docker-compose.yml](https://github.com/f-minzoni/dotnet-hellodocker/blob/master/docker-compose.yml) file:
+```
+version: '2'
+
+services:
+  app:
+    build: dotnetapp/
+    links:
+      - db
+  db:
+    image: postgres
+```
+
 
